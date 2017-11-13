@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="puquxuqiuViewController">
+            <connections>
+                <outlet property="tableivew" destination="XhE-bA-7DY" id="RU7-7A-x6B"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XhE-bA-7DY">
+                    <rect key="frame" x="0.0" y="30" width="375" height="637"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="cko-5m-li4"/>
+                        <outlet property="delegate" destination="-1" id="Htc-RN-Ph8"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提示：联系方式最少填写一项。" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xyi-xF-adq">
+                    <rect key="frame" x="20" y="0.0" width="355" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Xyi-xF-adq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="01H-4p-Fu4"/>
+                <constraint firstItem="XhE-bA-7DY" firstAttribute="top" secondItem="Xyi-xF-adq" secondAttribute="bottom" id="7IO-j3-ssx"/>
+                <constraint firstAttribute="trailing" secondItem="XhE-bA-7DY" secondAttribute="trailing" id="8d3-0O-Wjv"/>
+                <constraint firstAttribute="trailing" secondItem="Xyi-xF-adq" secondAttribute="trailing" id="C4x-aQ-yQM"/>
+                <constraint firstItem="XhE-bA-7DY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PIp-aY-vVM"/>
+                <constraint firstAttribute="bottom" secondItem="XhE-bA-7DY" secondAttribute="bottom" id="eHG-0C-Jff"/>
+                <constraint firstItem="Xyi-xF-adq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="uO4-rZ-Vrz"/>
+                <constraint firstItem="XhE-bA-7DY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="xsD-iq-Ner"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

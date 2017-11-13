@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="second" id="gTV-IL-0wX" customClass="secondCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" tag="120" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Pg-hg-drt">
+                        <rect key="frame" x="0.0" y="0.0" width="125" height="40"/>
+                        <state key="normal" title="我的偶像">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" tag="121" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNb-Es-fAh">
+                        <rect key="frame" x="125" y="0.0" width="125" height="40"/>
+                        <state key="normal" title="我的粉丝">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" tag="122" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCW-bM-1fn">
+                        <rect key="frame" x="250" y="0.0" width="125" height="40"/>
+                        <state key="normal" title="我的诗集">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="9Pg-hg-drt" secondAttribute="bottom" id="1fO-Qq-uuu"/>
+                <constraint firstAttribute="trailing" secondItem="mCW-bM-1fn" secondAttribute="trailing" id="5eW-G3-EHn"/>
+                <constraint firstItem="PNb-Es-fAh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="BjN-15-UU4"/>
+                <constraint firstItem="mCW-bM-1fn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="G65-ff-3TA"/>
+                <constraint firstItem="PNb-Es-fAh" firstAttribute="height" secondItem="9Pg-hg-drt" secondAttribute="height" id="MWa-E1-WHJ"/>
+                <constraint firstItem="mCW-bM-1fn" firstAttribute="width" secondItem="9Pg-hg-drt" secondAttribute="width" id="Och-mj-deo"/>
+                <constraint firstAttribute="bottom" secondItem="mCW-bM-1fn" secondAttribute="bottom" id="btE-at-UD5"/>
+                <constraint firstItem="PNb-Es-fAh" firstAttribute="leading" secondItem="9Pg-hg-drt" secondAttribute="trailing" id="cJF-Lo-c5h"/>
+                <constraint firstItem="mCW-bM-1fn" firstAttribute="leading" secondItem="PNb-Es-fAh" secondAttribute="trailing" id="hkl-gE-YEj"/>
+                <constraint firstItem="9Pg-hg-drt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="k88-GX-vCM"/>
+                <constraint firstItem="PNb-Es-fAh" firstAttribute="width" secondItem="9Pg-hg-drt" secondAttribute="width" id="pGs-AS-KPU"/>
+                <constraint firstItem="mCW-bM-1fn" firstAttribute="height" secondItem="9Pg-hg-drt" secondAttribute="height" id="rSD-qR-aVq"/>
+                <constraint firstAttribute="bottom" secondItem="PNb-Es-fAh" secondAttribute="bottom" id="rxd-z4-YlO"/>
+                <constraint firstItem="9Pg-hg-drt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wa1-vg-V5G"/>
+            </constraints>
+            <connections>
+                <outlet property="centerbtn" destination="PNb-Es-fAh" id="TfF-ml-Xfh"/>
+                <outlet property="leftbtn" destination="9Pg-hg-drt" id="dYK-mK-6Io"/>
+                <outlet property="rightbtn" destination="mCW-bM-1fn" id="rhS-q5-S4p"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52"/>
+        </collectionViewCell>
+    </objects>
+</document>

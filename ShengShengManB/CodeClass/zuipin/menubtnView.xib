@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="menubtnView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yj4-oU-SlE">
+                    <rect key="frame" x="0.0" y="0.0" width="94" height="50"/>
+                    <state key="normal" title="收藏"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgL-qC-jYA">
+                    <rect key="frame" x="94" y="0.0" width="93.5" height="50"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkl-xc-Sz7">
+                    <rect key="frame" x="187.5" y="0.0" width="94" height="50"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUB-gR-8YA">
+                    <rect key="frame" x="281.5" y="0.0" width="93.5" height="50"/>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="GUB-gR-8YA" firstAttribute="leading" secondItem="kkl-xc-Sz7" secondAttribute="trailing" id="5Jk-zO-gLI"/>
+                <constraint firstAttribute="trailing" secondItem="GUB-gR-8YA" secondAttribute="trailing" id="5yf-7B-urE"/>
+                <constraint firstItem="Yj4-oU-SlE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7Eu-mG-Jqm"/>
+                <constraint firstItem="vgL-qC-jYA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ahi-74-yWz"/>
+                <constraint firstAttribute="bottom" secondItem="GUB-gR-8YA" secondAttribute="bottom" id="Cpp-Nt-NMm"/>
+                <constraint firstAttribute="bottom" secondItem="kkl-xc-Sz7" secondAttribute="bottom" id="HoT-t2-r66"/>
+                <constraint firstItem="GUB-gR-8YA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Msi-I6-deA"/>
+                <constraint firstItem="GUB-gR-8YA" firstAttribute="width" secondItem="Yj4-oU-SlE" secondAttribute="width" id="RM3-Th-dzl"/>
+                <constraint firstItem="Yj4-oU-SlE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="T93-Ff-b5E"/>
+                <constraint firstItem="vgL-qC-jYA" firstAttribute="width" secondItem="Yj4-oU-SlE" secondAttribute="width" id="ZrI-yU-JnA"/>
+                <constraint firstItem="kkl-xc-Sz7" firstAttribute="width" secondItem="Yj4-oU-SlE" secondAttribute="width" id="axc-jw-Iw7"/>
+                <constraint firstAttribute="bottom" secondItem="Yj4-oU-SlE" secondAttribute="bottom" id="cfb-yM-xg4"/>
+                <constraint firstItem="kkl-xc-Sz7" firstAttribute="leading" secondItem="vgL-qC-jYA" secondAttribute="trailing" id="fEY-d1-rBe"/>
+                <constraint firstItem="vgL-qC-jYA" firstAttribute="leading" secondItem="Yj4-oU-SlE" secondAttribute="trailing" id="hp4-SI-hf5"/>
+                <constraint firstAttribute="bottom" secondItem="vgL-qC-jYA" secondAttribute="bottom" id="kys-L7-COi"/>
+                <constraint firstItem="kkl-xc-Sz7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uWb-yI-4CR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="firstbtn" destination="Yj4-oU-SlE" id="xqR-a4-QK3"/>
+                <outlet property="fourbtn" destination="GUB-gR-8YA" id="xHL-cA-5A9"/>
+                <outlet property="secondbtn" destination="vgL-qC-jYA" id="3Ga-b3-mwD"/>
+                <outlet property="threebtn" destination="kkl-xc-Sz7" id="xIh-Bf-tfs"/>
+            </connections>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="KGk-i7-Jjw" customClass="xitongCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19j-xH-YCK">
+                        <rect key="frame" x="15" y="5" width="345" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIq-R9-pyn">
+                        <rect key="frame" x="15" y="54" width="345" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="6I6-IX-BOX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="KIq-R9-pyn" secondAttribute="bottom" constant="5" id="Hhb-we-Sdt"/>
+                    <constraint firstItem="19j-xH-YCK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Hw1-h0-SWa"/>
+                    <constraint firstItem="KIq-R9-pyn" firstAttribute="top" secondItem="19j-xH-YCK" secondAttribute="bottom" constant="5" id="LBK-oX-M6t"/>
+                    <constraint firstItem="KIq-R9-pyn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="OSk-iO-VBv"/>
+                    <constraint firstAttribute="trailing" secondItem="19j-xH-YCK" secondAttribute="trailing" constant="15" id="TDs-9W-SR8"/>
+                    <constraint firstItem="19j-xH-YCK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="VRP-CB-nJq"/>
+                    <constraint firstAttribute="trailing" secondItem="KIq-R9-pyn" secondAttribute="trailing" constant="15" id="jbl-Pb-l4M"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentlab" destination="19j-xH-YCK" id="1oF-E0-tsX"/>
+                <outlet property="timelab" destination="KIq-R9-pyn" id="n5K-bB-Nmx"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

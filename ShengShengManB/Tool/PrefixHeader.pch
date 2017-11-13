@@ -1,0 +1,34 @@
+//
+//  PrefixHeader.pch
+//  ShengShengManA
+//
+//  Created by mibo02 on 16/12/14.
+//  Copyright © 2016年 mibo02. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "UIImage+scale.h"
+#import "Header.h"
+#import "UIBarButtonItem+Extension.h"
+#import <IQKeyboardManager.h>
+#import "TodayDate.h"
+#import "MBProgressHUD+MJ.h"
+#import "BottomView.h"
+#import "PhotoPickerManager.h"
+#import <YCXMenu.h>
+#import "NetWorkManager.h"
+#import "Masonry.h"
+#import "UserInfoManager.h"
+#import <MJExtension.h>
+#import <UIImageView+WebCache.h>
+#import <UIButton+WebCache.h>
+#import "UIScrollView+EmptyDataSet.h"
+#import "UIViewController+FullScreen.h"
+#import "getTimes.h"
+#import <MJRefresh.h>
+#import "ZLabel.h"
+#import <MWPhotoBrowser.h>
+#import "WeChatActionSheet.h"
+#import "mdfivetool.h"
+#endif /* PrefixHeader_pch */

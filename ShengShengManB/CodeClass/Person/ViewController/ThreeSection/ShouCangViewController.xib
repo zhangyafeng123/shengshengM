@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShouCangViewController">
+            <connections>
+                <outlet property="tableview" destination="ZOI-7B-rCW" id="CDi-4u-oFD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZOI-7B-rCW">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="zA4-59-erv"/>
+                        <outlet property="delegate" destination="-1" id="1rS-3R-Dcl"/>
+                        <outlet property="emptyDataSetDelegate" destination="-1" id="sC2-5F-mXf"/>
+                        <outlet property="emptyDataSetSource" destination="-1" id="yeO-pK-o1J"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZOI-7B-rCW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1JL-4t-sZf"/>
+                <constraint firstAttribute="trailing" secondItem="ZOI-7B-rCW" secondAttribute="trailing" id="8dv-lV-4C6"/>
+                <constraint firstAttribute="bottom" secondItem="ZOI-7B-rCW" secondAttribute="bottom" id="a2I-3u-BSb"/>
+                <constraint firstItem="ZOI-7B-rCW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pYN-hZ-reT"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
